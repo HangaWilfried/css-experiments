@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./main.js" defer></script>
+
+    <style type="text/tailwindcss">
+      @layer base {
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        /* Firefox */
+        input[type="number"] {
+          -moz-appearance: textfield;
+        }
+
+        input {
+          @apply w-16 h-16 appearance-none text-center text-lg rounded-lg ease-in-out
+            border border-gray-300 focus:border-2 outline-none transition duration-300;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p-10 flex flex-col items-center">
+      <h1
+        class="text-xl font-semibold underline underline-offset-8 text-gray-900"
+      >
+        Enter valid otp code
+      </h1>
+      <div class="py-16 flex gap-4 items-center text-gray-400">
+        <input type="number" name="" id="" />
+        <input class="" type="number" name="" id="" />
+        <input type="number" name="" id="" />
+        <input type="number" name="" id="" />
+      </div>
+    </div>
+  </body>
+</html>

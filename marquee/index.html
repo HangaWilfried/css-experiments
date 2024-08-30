@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markee animation</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script type="module">
+      import { createApp } from "vue";
+      import CustomMarqee from "./AnimationMarquee.js";
+
+      createApp(CustomMarqee).mount("#app");
+    </script>
+  </body>
+</html>

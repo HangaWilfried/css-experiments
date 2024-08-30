@@ -1,0 +1,12 @@
+.marquee {
+    animation: marquee-all 15s linear infinite;
+}
+
+@keyframes marquee-all {
+    from {
+        transform: translate(0%);
+    }
+    to {
+        transform: translate(-100%);
+    }
+}
